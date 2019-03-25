@@ -1,0 +1,19 @@
+[package]
+name = "zugzug"
+version = "0.0.1"
+authors = ["Erik Ronshagen <eronshagen@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.32.0"
+serde_json = "1.0.39"
+serde = { version = "1.0.89", features = ["derive"] }
+chrono = "0.4.6"
+dirs = "1.0.5"
+prettytable-rs = "0.8.0"
+
+[[bin]]
+bench = false
+path = "src/main.rs"
+name = "zz"
+
